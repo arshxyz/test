@@ -2,7 +2,7 @@
   "name": "newapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://arshxyz.github.io/test/",
+  "homepage": "https://arshxyz.github.io/test/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
