@@ -1,0 +1,1 @@
+{"version":3,"sources":["my.css"],"names":[],"mappings":"AAAA,GACI,wBAAiB,CAAjB,qBAAiB,CAAjB,oBAAiB,CAAjB,gBACJ,CACA,KACI,wBACJ,CAEA,SACA,oBACA","file":"main.f0fedd66.chunk.css","sourcesContent":["h1 {\r\n    user-select: none;\r\n}\r\nbody {\r\n    background-color: #243447;\r\n}\r\n\r\n.ui.card {\r\nword-wrap: break-word;\r\n}"]}
