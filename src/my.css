@@ -1,0 +1,10 @@
+h1 {
+    user-select: none;
+}
+body {
+    background-color: #243447;
+}
+
+.ui.card {
+word-wrap: break-word;
+}

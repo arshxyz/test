@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import data from './my.json';
+import 'semantic-ui-css/semantic.min.css'
+import './my.css'
+import Getprices from './Getprices'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const initialPrices = data.map((item) => {
+    return parseInt(item.price.replace(',', ''))
+  })
+  const [prices, setPrices] = useState(initialPrices);
+  const [load, setLoad] = useState(true);
+
+
+  useEffect(() => {window.history.pushState('', '','pc-parts')
+  const sleep = (milliseconds) => {
+      return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    };
+  const wait = async (milliseconds = 2000) => {
+    await sleep(milliseconds);
+    setLoad(() => {return false});
+     };
+
+  wait()
+  
+  }, [])
+
+
+
+
+
+
+
+    return (
+      // <div style={{display: 'flex', justifyContent: 'space-around',  flexWrap: 'wrap'}}> 
+      <div>
+      <Getprices prices={prices} sub={true} load={load} /> </div>
+      )
 }
 
 export default App;
