@@ -3,6 +3,7 @@ import data from './my.json';
 import 'semantic-ui-css/semantic.min.css'
 import './my.css'
 import Getprices from './Getprices'
+import SBox from './SBox'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     return (
       // <div style={{display: 'flex', justifyContent: 'space-around',  flexWrap: 'wrap'}}> 
       <div>
+      <SBox />
       <Getprices prices={prices} sub={true} load={load} /> </div>
       )
 }
