@@ -14,21 +14,6 @@ function App() {
   const [load, setLoad] = useState(true);
 
 
-  useEffect(() => {window.history.pushState('', '','pc-parts')
-  const sleep = (milliseconds) => {
-      return new Promise((resolve) => setTimeout(resolve, milliseconds));
-    };
-  const wait = async (milliseconds = 2000) => {
-    await sleep(milliseconds);
-    setLoad(() => {return false});
-     };
-
-  wait()
-  
-  }, [])
-
-
-
 
 
 

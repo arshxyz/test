@@ -22,9 +22,9 @@
 
   function Getprices(props) {
     return (
-      <Container>
+      <Container fluid>
       <Segment>
-      <Card.Group centered itemsPerRow={3} fluid={false}>
+      <Card.Group stackable centered>
       <Prices {...props} />
       </Card.Group>
       </Segment>
