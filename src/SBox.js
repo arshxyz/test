@@ -1,14 +1,14 @@
 import React, {useState, useRef} from 'react';
 import _ from 'lodash';
 import 'semantic-ui-css/semantic.min.css';
-import {Search, Grid} from 'semantic-ui-react';
+import {Search, Grid, Label} from 'semantic-ui-react';
 import data from './my.json';
 
 function SBox(props){
 
     const [searchdata, setSearchdata] = useState("");
     const [isLoading, setLoading] = useState(false);
-    const [results, setResults] = useState([{"title": "test"}]);
+    const [results, setResults] = useState([{"title": "Searching..."}]);
     const cval = useRef(_.debounce((val) => {
         document.title = val ? "Search - " + val : "";
         setLoading(false);
@@ -27,8 +27,10 @@ function SBox(props){
     }
 
 
-    return <Grid centered> <Grid.Column largeScreen={3} mobile={12} textAlign="center"> 
-            <Search fluid
+    return <Grid centered> 
+
+            <Grid.Column largeScreen={5} mobile={12} textAlign="center"> 
+            <Search fluid inverted size="large"
                 value={searchdata} 
                 onSearchChange={handleSearch} 
                 loading={isLoading}  

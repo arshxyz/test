@@ -25,12 +25,13 @@
     }
 
     return (
-      <Container fluid>
-      <Segment>
+      <Container inverted>
+      <div className="result_segment">
       <Card.Group stackable centered>
       <Prices {...props} />
       </Card.Group>
-      </Segment>
+
+      </div>
       </Container>
       )
   }

@@ -1,9 +1,7 @@
 h1 {
     user-select: none;
 }
-body {
-    background-color: #243447;
-}
+
 
 .ui.card {
 word-wrap: break-word;
@@ -12,4 +10,16 @@ word-wrap: break-word;
 .search .results {
 overflow-y: auto;
 max-height: 300px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.result_segment {
+    margin-top: 2em;
+}
+
+.search {
+    border-radius: 0 !important;
 }

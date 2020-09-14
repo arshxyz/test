@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import data from './my.json';
 import 'semantic-ui-css/semantic.min.css'
 import './my.css'
 import Getprices from './Getprices'
 import SBox from './SBox'
+import {Segment, Header, Menu} from 'semantic-ui-react';
 
 
 function App() {
@@ -22,8 +23,10 @@ function App() {
     return (
       // <div style={{display: 'flex', justifyContent: 'space-around',  flexWrap: 'wrap'}}> 
       <div>
-      <SBox />
-      <Getprices prices={prices} sub={true} load={load} /> </div>
+      <Segment padded={'small'} inverted className="search">
+        <SBox />
+      </Segment>
+      <Getprices prices={prices} sub={true} load={load} />  </div>  
       )
 }
 
