@@ -27,9 +27,9 @@ function SBox(props){
     }
 
 
-    return <Grid centered> 
-
-            <Grid.Column largeScreen={5} mobile={12} textAlign="center"> 
+    return <Grid> 
+            <Grid.Column verticalAlign="middle" largeScreen={2} mobile={6}> <span className="menu_item" >PC Builder </span></Grid.Column>
+            <Grid.Column largeScreen={3} mobile={10} textAlign="center" verticalAlign="middle"> 
             <Search fluid inverted size="large"
                 value={searchdata} 
                 onSearchChange={handleSearch} 

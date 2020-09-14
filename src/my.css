@@ -18,8 +18,26 @@ html, body {
 
 .result_segment {
     margin-top: 2em;
+
 }
 
 .search {
     border-radius: 0 !important;
+
+}
+
+.menu_item {
+    font-size: large;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 
+    6px 6px 10px 0 rgba(0, 0, 0, 1),
+    -4px -4px 8px 0 rgba(255, 255, 255, 0.3);
+    user-select: none;
+}
+
+.ui.input > input {
+    box-shadow: 
+    8px 8px 10px 0 rgba(0, 0, 0, 1),
+    -4px -4px 8px 0 rgba(255, 255, 255, 0.3) !important;
 }
