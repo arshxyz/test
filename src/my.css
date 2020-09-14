@@ -8,3 +8,8 @@ body {
 .ui.card {
 word-wrap: break-word;
 }
+
+.search .results {
+overflow-y: auto;
+max-height: 300px;
+}
