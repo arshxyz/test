@@ -28,8 +28,8 @@ function SBox(props){
 
 
     return <Grid stackable={false}> 
-            <Grid.Column verticalAlign="middle" largeScreen={2} mobile={8} only='widescreen'> <span className="menu_item" >PC Builder </span></Grid.Column>
-            <Grid.Column largeScreen={3} mobile={8} textAlign="center" verticalAlign="middle"> 
+            <Grid.Column verticalAlign="middle" largeScreen={2} mobile={6} only='widescreen'> <span className="menu_item" >PC Builder </span></Grid.Column>
+            <Grid.Column largeScreen={3} mobile={10} textAlign="center" verticalAlign="middle"> 
             <Search fluid inverted size="large"
                 value={searchdata} 
                 onSearchChange={handleSearch} 
