@@ -26,6 +26,10 @@ html, body {
 
 }
 
+.ui.inverted.segment {
+    background-color:  #1f262e;
+}
+
 
 
 .menu_item {
